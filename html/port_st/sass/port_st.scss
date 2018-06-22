@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+.head_st{
+  background-image: url(../img/pattern01.jpg);
+  background-repeat: repeat;
+  width: 100%;
+  .img01{
+    > h1{
+      > img{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.menu{
+  background-image: url(../img/pattern_menu.jpg);
+  height: 79px;
+  box-shadow: 0px -2px 7px 2px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  > ul{
+    width: 560px;
+    margin: 0 auto;
+    > li{
+      float: left;
+      width: 100px;
+      margin: 30px 0px 30px 62px;
+    }
+  }
+}
+
+.about_cnt{
+  width: 100%;
+  height: 428px;
+  background-image: url(../img/about_dcbg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  > header{
+    > h2{
+      width: 160px;
+      margin: 0 auto;
+      padding: 20px 0px;
+    }
+  }
+  .about_sub{
+    width: 1080px;
+    margin: 0 auto;
+    background-image: url(../img/pattern01.jpg);
+    .right_txt{
+      width: 200px;
+      float: left;
+      > h3{
+        font-size: 30px;
+      }
+      > ul{
+        > li{
+          margin-bottom: 12px;
+          &:first-child{
+            margin-top: 20px;
+          }
+          &:last-child{
+            margin-bottom: 0px;
+          }
+          font-size: 14px;
+        }
+      }
+    }
+    .left_txt{
+      width: 200px;
+      float: right;
+      > h3{
+        font-size: 30px;
+      }
+      > ul{
+        > li{
+          margin-bottom: 12px;
+          &:first-child{
+            margin-top: 20px;
+          }
+          &:last-child{
+            margin-bottom: 0px;
+          }
+          font-size: 14px;
+          > span{
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .img02{
+    float: left;
+  }
+}

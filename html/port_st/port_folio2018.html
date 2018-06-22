@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/port_st.css">
+  <link rel="stylesheet" href="reset/reset.css">
+  <title>portfolio_st</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+    $(function(){
+      // #で始まるアンカーをクリックした場合に処理
+      $('a[href^=#]').click(function() {
+        // スクロールの速度
+        var speed = 400; // ミリ秒
+        // アンカーの値取得
+        var href= $(this).attr("href");
+        // 移動先を取得
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        // 移動先を数値で取得
+        var position = target.offset().top;
+        // スムーススクロール
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="all_box">
+    <section class="head_st">
+      <header>
+        <div class="img01"><h1><img src="img/logo.png" alt="SATORU KOKUBO PORTFOLIO"></h1></div>
+      </header>
+      <div class="menu">
+        <ul>
+          <li><a href="#about"><img src="img/about.png" alt="ABOUT"></a></li>
+          <li><a href="#websites"><img src="img/websites.png" alt="WEBSITES"></a></li>
+          <li><a href="#concept"><img src="img/concept.png" alt="CONCEPT"></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="about_cnt" id="about">
+      <header><h2><img src="img/about_ttl.png" alt="ABOUT_TITLE"></h2></header>
+      <div class="about_sub">
+        <section class="right_txt">
+          <h3>経歴</h3>
+          <ul>
+            <li>2011年3月　工学院大学卒業</li>
+            <li>2011年4月～2013年2月</li>
+            <li>トルンプ株式会社</li>
+            <li>大型工作機械の販促及び保守</li>
+            <li>2013年12月～2016年2月</li>
+            <li>プラスラボ株式会社</li>
+            <li>WEBデザイナー及びディレクション補佐</li>
+          </ul>
+        </section>
+        <section class="left_txt">
+          <h3>スキル</h3>
+          <ul>
+            <li>WEB Design<span>(PhotoshopCC/Illustrator)</span></li>
+            <li>Flyer Design</li>
+            <li>Coding<span>HTML/CSS/jQuery(Insert Only)</span></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+    <section class="websites_cnt" id="websites">
+      <header><h2><img src="img/websites_ttl.png" alt="WEBSITES_TITLE"></h2></header>
+      <ul class="haney_comb_li">
+        <li><a href="http://fukuoka-beautysalon.com/"><img src="img/site01.png" alt="yui yui様"></a></li>
+        <li><a href="http://fukuoka-rentalspace.com/"><img src="img/site02.png" alt="コミュニティスペース ウララ様"></a></li>
+        <li><a href="http://www.ex-ad.co.jp/lp/exhibition/"><img src="img/site03.png" alt="エクスアドメディア様"></a></li>
+        <li><a href="http://karada.help/"><img src="img/site04.png" alt="西中洲整体院様"></a></li>
+        <li><a href="https://wacoal-job.jp/"><img src="img/site05.png" alt="ワコール様"></a></li>
+        <li><a href="https://lohaco.jp/fashion/"><img src="img/site06.png" alt="ロハコ様 ファッション"></a></li>
+        <li><a href="http://diningbar-curious.com/"><img src="img/site07.png" alt="CURIOS様 飲食店"></a></li>
+        <li><a href="http://kikuya3.co.jp/"><img src="img/site08.png" alt="株式会社喜久屋様"></a></li>
+        <li><a href="http://www.uniqlo.com/jp/sp/"><img src="img/site09.png" alt="ユニクロ様SPページ"></a></li>
+        <li><a href="https://p-castle-recruit.jp/"><img src="img/site10.png" alt="株式会社真城ホールディングス様"></a></li>
+        <li><a href="http://brim-fukuoka.com/"><img src="img/site11.png" alt="BRIM様 飲食店"></a></li>
+        <li><a href="https://dynam-job.jp/"><img src="img/site12.png" alt="株式会社ダイナム様"></a></li>
+        <li><a href="http://health-promotion.jp/"><img src="img/site13.png" alt="むさし鍼灸整骨院 川久保様"></a></li>
+        <li><a href="http://lolo8633.com/"><img src="img/site14.png" alt="LOLO様"></a></li>
+      </ul>
+    </section>
+    <section class="concept_cnt"  id="concept">
+      <h2><img src="img/concept_ttl.png" alt="CONCEPT_TITLE"></h2>
+      <p>当ポートフォリオは<br>「ハニカム」素材をモチーフにしてデザインされています。<br>ハニカムは六角形を組み合わせた強度のある軽いスマートな素材です。<br>そんなハニカムのように一つ一つの六角形(技術)を習得し、やがては強度の高い(強力な)クリエイターになる為、ハニカムをコンセプトにしています。</p>
+    </section>
+    <div class="footer_cnt">
+      <div class="img03"><img src="img/honey_logo.png" alt="HONEYCOMB LOGO"></div>
+    </div>
+    <div>
+      <p>Honeycomb-Portfolio</p>
+    </div>
+  </div>
+</body>
+</html>
